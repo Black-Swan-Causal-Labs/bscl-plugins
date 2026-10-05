@@ -1,0 +1,36 @@
+{
+  "name": "black-swan-causal-labs",
+  "description": "Validated MCP tools for real-world evidence, pharmacoepidemiology and public health, from Black Swan Causal Labs.",
+  "owner": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "plugins": [
+    {
+      "name": "nhanes",
+      "source": "./plugins/nhanes",
+      "description": "Analyze CDC NHANES the way NCHS does: correct survey weights, pooled cycles, design-based CIs and NCHS reliability flags. Validated against published NCHS estimates."
+    },
+    {
+      "name": "target-checklist",
+      "source": "./plugins/target-checklist",
+      "description": "Score how completely a target trial emulation study reports what the TARGET guideline requires, with evidence for every item."
+    },
+    {
+      "name": "robins-i",
+      "source": "./plugins/robins-i",
+      "description": "ROBINS-I V2 (not V1): assess risk of bias in one result of a non-randomized cohort study, domain by domain."
+    },
+    {
+      "name": "openfda",
+      "source": "./plugins/openfda",
+      "description": "Resolve FDA application numbers and product names to regulatory metadata across CDER, CBER and CDRH."
+    },
+    {
+      "name": "dag-studio",
+      "source": "./plugins/dag-studio",
+      "description": "Causal DAG analysis: backdoor paths, adjustment sets and bias simulation, validated against dagitty. Hosted server; requires a trial token from Black Swan Causal Labs."
+    }
+  ]
+}

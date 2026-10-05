@@ -1,0 +1,29 @@
+{
+  "name": "robins-i",
+  "displayName": "ROBINS-I V2",
+  "version": "0.1.0",
+  "description": "ROBINS-I V2 (not V1): assess risk of bias in one result of a non-randomized cohort study, domain by domain.",
+  "author": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "homepage": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
+  "repository": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "risk-of-bias",
+    "robins-i",
+    "appraisal",
+    "observational-studies",
+    "rwe"
+  ],
+  "mcpServers": {
+    "robins-i": {
+      "command": "uvx",
+      "args": [
+        "robins-i-mcp@0.1.0"
+      ]
+    }
+  }
+}

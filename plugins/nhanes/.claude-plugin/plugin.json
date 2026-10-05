@@ -1,0 +1,30 @@
+{
+  "name": "nhanes",
+  "displayName": "NHANES (design-correct survey analysis)",
+  "version": "0.5.1",
+  "description": "Analyze CDC NHANES the way NCHS does: correct survey weights, pooled cycles, design-based CIs and NCHS reliability flags. Validated against published NCHS estimates.",
+  "author": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "homepage": "https://github.com/Black-Swan-Causal-Labs/nhanes-mcp",
+  "repository": "https://github.com/Black-Swan-Causal-Labs/nhanes-mcp",
+  "license": "MIT",
+  "keywords": [
+    "nhanes",
+    "survey",
+    "epidemiology",
+    "public-health",
+    "cdc",
+    "nchs"
+  ],
+  "mcpServers": {
+    "nhanes": {
+      "command": "uvx",
+      "args": [
+        "nhanes-mcp@0.5.1"
+      ]
+    }
+  }
+}

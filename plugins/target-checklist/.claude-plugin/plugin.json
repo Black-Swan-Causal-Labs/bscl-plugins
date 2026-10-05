@@ -1,0 +1,29 @@
+{
+  "name": "target-checklist",
+  "displayName": "TARGET Checklist",
+  "version": "0.2.0",
+  "description": "Score how completely a target trial emulation study reports what the TARGET guideline requires, with evidence for every item.",
+  "author": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "homepage": "https://github.com/Black-Swan-Causal-Labs/target-mcp",
+  "repository": "https://github.com/Black-Swan-Causal-Labs/target-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "target-trial-emulation",
+    "reporting-guideline",
+    "appraisal",
+    "rwe",
+    "causal-inference"
+  ],
+  "mcpServers": {
+    "target": {
+      "command": "uvx",
+      "args": [
+        "target-mcp@0.2.0"
+      ]
+    }
+  }
+}

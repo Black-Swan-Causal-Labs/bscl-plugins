@@ -1,0 +1,39 @@
+{
+  "name": "dag-studio",
+  "displayName": "DAG Studio",
+  "version": "0.1.0",
+  "description": "Causal DAG analysis: backdoor paths, adjustment sets and bias simulation, validated against dagitty. Hosted server; requires a trial token from Black Swan Causal Labs.",
+  "author": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "homepage": "https://github.com/Black-Swan-Causal-Labs/dagstudio-mcp",
+  "repository": "https://github.com/Black-Swan-Causal-Labs/dagstudio-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "causal-inference",
+    "dag",
+    "confounding",
+    "adjustment-sets",
+    "epidemiology"
+  ],
+  "mcpServers": {
+    "dag-studio": {
+      "type": "http",
+      "url": "https://dagstudio-mcp.blackswancausallabs.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.dagstudio_token}"
+      }
+    }
+  },
+  "userConfig": {
+    "dagstudio_token": {
+      "type": "string",
+      "title": "DAG Studio trial token",
+      "description": "Trial token for the hosted DAG Studio server. Request one at jdiazdecaro@blackswancausallabs.com.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

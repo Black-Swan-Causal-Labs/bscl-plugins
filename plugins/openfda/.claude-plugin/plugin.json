@@ -1,0 +1,30 @@
+{
+  "name": "openfda",
+  "displayName": "openFDA Regulatory Metadata",
+  "version": "0.1.0",
+  "description": "Resolve FDA application numbers and product names to regulatory metadata across CDER, CBER and CDRH.",
+  "author": {
+    "name": "Black Swan Causal Labs",
+    "email": "jdiazdecaro@blackswancausallabs.com",
+    "url": "https://blackswancausallabs.com"
+  },
+  "homepage": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp",
+  "repository": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp",
+  "license": "MIT",
+  "keywords": [
+    "fda",
+    "openfda",
+    "regulatory",
+    "drugs",
+    "devices",
+    "biologics"
+  ],
+  "mcpServers": {
+    "openfda": {
+      "command": "uvx",
+      "args": [
+        "openfda-mcp@0.1.0"
+      ]
+    }
+  }
+}
