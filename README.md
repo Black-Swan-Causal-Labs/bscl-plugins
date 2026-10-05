@@ -1,10 +1,15 @@
 # Black Swan Causal Labs plugins
 
-A plugin marketplace for Claude Code and Cowork. Each plugin installs one of the
+A plugin marketplace for Claude Code, Cowork, and Codex. Each plugin installs one of the
 [Black Swan Causal Labs](https://blackswancausallabs.com) MCP servers for real-world
 evidence, pharmacoepidemiology and public health, with no configuration files to edit.
 
 ## Install
+
+The local servers run with [uv](https://docs.astral.sh/uv/). Install it first if you don't have it,
+and make sure `uvx` is available on your command path.
+
+### Claude Code and Cowork
 
 In Claude Code or Cowork, add the marketplace once:
 
@@ -18,7 +23,31 @@ Then open `/plugin` and pick the tools you want, or install one directly:
 /plugin install nhanes@black-swan-causal-labs
 ```
 
-The local servers run with [uv](https://docs.astral.sh/uv/). Install it first if you don't have it.
+### Codex
+
+Add the marketplace once from your terminal:
+
+```bash
+codex plugin marketplace add Black-Swan-Causal-Labs/bscl-plugins
+```
+
+Then select the tools you want in the app's Plugins directory, or install one
+directly from your terminal:
+
+```bash
+codex plugin add target-checklist@black-swan-causal-labs
+```
+
+Replace `target-checklist` with any plugin name listed below. Start a new Codex chat
+after installation to use the newly installed tools.
+
+Codex marketplace installation and TARGET Checklist 0.2.0 connectivity were verified
+on macOS: Codex recognized the server configuration, and a separate MCP client started
+the pinned server, listed its 11 tools, and successfully called `get_checklist`.
+This check did not cover a full manuscript assessment or the other four plugins.
+
+Codex supports Claude-compatible marketplaces and manifests; no separate Codex
+plugin package is required. See the [OpenAI plugin guide](https://developers.openai.com/plugins/build/plugins).
 
 ## Plugins
 
